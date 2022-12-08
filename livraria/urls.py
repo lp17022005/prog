@@ -5,15 +5,12 @@ from core.views import CategoriaViewSet, EditoraViewSet
 
 from rest_framework.routers import DefaultRouter
 
-from core.views import CategoriaViewSet
-
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
 
 router = DefaultRouter()
-router.register(r"categorias", CategoriaViewSet)
 router.register(r"categorias", CategoriaViewSet)
 router.register(r"editoras", EditoraViewSet)
 
