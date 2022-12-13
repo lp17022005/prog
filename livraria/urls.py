@@ -10,7 +10,7 @@ from rest_framework_simplejwt.views import (TokenObtainPairView,
 
 from core.views import (AutorViewSet, CategoriaViewSet, EditoraViewSet,
                         LivroViewSet)
-from media.router import router as media_router
+from uploader.router import router as media_router
 
 router = DefaultRouter()
 router.register(r'categorias', CategoriaViewSet)
