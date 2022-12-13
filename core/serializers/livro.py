@@ -1,14 +1,12 @@
 from rest_framework.serializers import ModelSerializer, SlugRelatedField
 
-from rest_framework.serializers import ModelSerializer, SlugRelatedField
-
-
 from core.models import Livro
+from uploader.models import Image
+from uploader.serializers import ImageSerializer
+
 # from uploader.models import Image
 # from uploader.serializers import ImageSerializer
 
-from uploader.models import Image
-from uploader.serializers import ImageSerializer
 
 
 class LivroSerializer(ModelSerializer):

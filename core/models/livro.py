@@ -1,10 +1,8 @@
 from django.db import models
 
 from core.models import Autor, Categoria, Editora
-
 from uploader.models import Image
 
-from django.db import models
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=255)
